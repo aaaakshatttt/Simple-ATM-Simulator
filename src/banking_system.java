@@ -61,7 +61,7 @@ public class banking_system {
                 break;//using this the code will be exited or else while will take over againa and loop will run again
             }
             else{
-                System.out.println("invalid entry! try again");
+                System.out.println("invalid entry! try againn");
             }
 
         }
