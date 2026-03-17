@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class banking_system {
     static Scanner sc = new Scanner(System.in);
-    static double balance = 100;//i initialized this varibale here so that we can use amount variable anywherre in the code not just inside main class
+    static double balance = 100;//i initialized this varibale here so that we can use balance variable anywherre in the code not just inside main class
 
 
     public static void deposite(){
@@ -26,6 +26,9 @@ public class banking_system {
         double wamount = sc.nextDouble();
         if (wamount > balance){
             System.out.println("insufficient balance");
+            double remainin = wamount-balance;
+            System.out.println("add atleast " + remainin + " to withdraw " + wamount );
+
         }
         else if (wamount <= 0){
             System.out.println("invalid entry");
